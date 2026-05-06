@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4ade80;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+#gameCanvas {
+    background-color: #0f0f1a;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    display: block; /* Removes default inline margin */
+    margin: 0 auto;
+    touch-action: none; /* Kaydırırken ekranın kaymasını engeller */
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    margin-top: 25px;
+}
+
+#start-btn {
+    background: linear-gradient(45deg, #4ade80, #22c55e);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.4);
+}
+
+#start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.6);
+}
+
+#start-btn:active {
+    transform: translateY(1px);
+}
